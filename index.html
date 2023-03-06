@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booki</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    
+    <div id="bloc_page">
+        <header>
+            <div id="titre_principal">
+                <div id="logo">
+                    <img src="images/logo/Booki.png" alt="Logo booki">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activite">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <h1>Trouvez votre hebergement pous les vacances</h1>
+
+            <form class="recherche" action="">
+                <div><i class="fa fa-search"></i></div>
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Rechercher</button>
+            </form>
+        </div>
+
+        <section id="hebergement">
+
+            <article class="liste_hebergement">
+                <h2>Hébergements à Marseille</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et
+                    semper purus. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Duis vel enim mi, in lobortis sem. Vestibulum
+                    luctus elit eu libero ultrices id fermentum sem sagittis. Nulla imperdiet
+                    mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio
+                    ipsum, a elementum nisi. Mauris non erat eu erat placerat convallis. Mauris
+                    in pretium urna. Cras laoreet molestie odio, consequat consequat velit
+                    commodo eu. Integer vitae lectus ac nunc posuere pellentesque non at eros.
+                    Suspendisse non lectus lorem.</p>
+                <p>Vivamus sed libero nec mauris pulvinar facilisis ut
+                    non sem. Quisque mollis ullamcorper diam vel faucibus. Vestibulum
+                    sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis
+                    orci arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium
+                    nunc aliquam. Aenean pulvinar condimentum enim a dignissim. Vivamus sit
+                    amet lectus at ante adipiscing adipiscing eget vitae felis. In at fringilla
+                    est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus.
+                    Duis risus elit, venenatis vel rutrum in, imperdiet in quam. Sed
+                    vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisl, in
+                    rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam
+                    vitae nec diam.</p>
+                <p>Phasellus ligula massa, congue ac vulputate non,
+                    dignissim at augue. Sed auctor fringilla quam quis porttitor. Praesent
+                    vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                    ac turpis egestas. Maecenas consectetur euismod urna. In hac habitasse
+                    platea dictumst. Quisque tincidunt porttitor vestibulum. Ut iaculis, lacus
+                    at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu
+                    lectus. Nunc elit quam, rutrum ut dignissim sit amet, egestas at sem.</p>
+            </article>
+
+            <aside class="liste_populaire">
+                <h2>Les plus populaires</h2>
+                <img src="images/bulle.png" alt="" id="fleche_bulle">
+            </aside>
+        </section>
+
+        <section id="activite">
+            <h2>Activité à Marseille</h2>
+        </section>
+        
+
+        <footer>
+            <div id="a_propos">
+                <h1>A propos</h1>
+                <div class="listes_footer">
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentiqlité</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="nos_hebergement">
+                <h1>Nos hébergements</h1>
+                <div class="listes_footer">
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hotel</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="assistance">
+                <h1>Assistance</h1>
+                <div class="listes_footer">
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
