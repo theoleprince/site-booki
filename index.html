@@ -26,61 +26,184 @@
             </nav>
         </header>
 
-        <div>
+        <div class="filtre-general">
             <h1>Trouvez votre hebergement pous les vacances</h1>
+            <span class="sous-titre">En plein centre ville ou en pleine nature</span>
 
-            <form class="recherche" action="">
+            <form class="recherche" action="#">
                 <div><i class="fa fa-search"></i></div>
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">Rechercher</button>
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Rechercher</button>
             </form>
+            <!-- <div class="filtre">
+                <label for="filter">Filtres</label>
+                <button><span class="icon"><i class="fa fa-search"></i></span> <span>Economique</span></button>
+                <button><span class="icon"><i class="fa fa-search"></i></span><span>Familial</span></button>
+                <button><span class="icon"><i class="fa fa-search"></i></span><span>Romantique</span></button>
+                <button><span class="icon"><i class="fa fa-search"></i></span><span>Animaux autorises</span></button>
+            </div> -->
+
+            <div class="filtre">
+                <div class="label-filtre"><label for="filter">Filtres</label></div>
+                <div class="button"><div class="icon"><i class="fa fa-search"></i></div> <div class="label-div">Economique</div></div>
+                <div class="button"><div class="icon"><i class="fa fa-search"></i></div><div class="label-div">Familial</div></div>
+                <div class="button"><div class="icon"><i class="fa fa-search"></i></div><div class="label-div">Romantique</div></div>
+                <div class="button"><div class="icon"><i class="fa fa-search"></i></div><div class="label-div">Animaux autorises</div></div>
+            </div>
+
+            <label for="logement"><span><i class="fa fa-search"></i></span> Plus de 500 logements sont disponibles dans cette ville</label>
+
         </div>
 
         <section id="hebergement">
-
             <article class="liste_hebergement">
                 <h2>Hébergements à Marseille</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et
-                    semper purus. Cum sociis natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. Duis vel enim mi, in lobortis sem. Vestibulum
-                    luctus elit eu libero ultrices id fermentum sem sagittis. Nulla imperdiet
-                    mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio
-                    ipsum, a elementum nisi. Mauris non erat eu erat placerat convallis. Mauris
-                    in pretium urna. Cras laoreet molestie odio, consequat consequat velit
-                    commodo eu. Integer vitae lectus ac nunc posuere pellentesque non at eros.
-                    Suspendisse non lectus lorem.</p>
-                <p>Vivamus sed libero nec mauris pulvinar facilisis ut
-                    non sem. Quisque mollis ullamcorper diam vel faucibus. Vestibulum
-                    sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis
-                    orci arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium
-                    nunc aliquam. Aenean pulvinar condimentum enim a dignissim. Vivamus sit
-                    amet lectus at ante adipiscing adipiscing eget vitae felis. In at fringilla
-                    est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus.
-                    Duis risus elit, venenatis vel rutrum in, imperdiet in quam. Sed
-                    vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisl, in
-                    rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam
-                    vitae nec diam.</p>
-                <p>Phasellus ligula massa, congue ac vulputate non,
-                    dignissim at augue. Sed auctor fringilla quam quis porttitor. Praesent
-                    vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                    ac turpis egestas. Maecenas consectetur euismod urna. In hac habitasse
-                    platea dictumst. Quisque tincidunt porttitor vestibulum. Ut iaculis, lacus
-                    at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu
-                    lectus. Nunc elit quam, rutrum ut dignissim sit amet, egestas at sem.</p>
+                <div class="conteneurs">
+                    <div class="gallery">
+                        <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                </div>
             </article>
 
             <aside class="liste_populaire">
                 <h2>Les plus populaires</h2>
-                <img src="images/bulle.png" alt="" id="fleche_bulle">
+                <div class="conteneurs">
+                    <div class="gallery_populaire">
+                        <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery_populaire">
+                        <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery_populaire">
+                        <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc">
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                </div>
+
             </aside>
         </section>
 
         <section id="activite">
-            <h2>Activité à Marseille</h2>
+            <article class="liste_activite">
+                <h2>Activité à Marseille</h2>
+
+                <div class="conteneurs">
+                    <div class="gallery_activite">
+                        <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc_activite">
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery_activite">
+                        <div class="gallery_activite_two_img">
+                            <div class="double_img">
+                                <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="Auberge La Cannebière">
+                                <div class="desc_activite">
+                                    <p>Nuit à partir de 25E</p>
+                                </div>
+                            </div>
+                            <div class="double_img">
+                                <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="Auberge La Cannebière">
+                                <div class="desc_activite">
+                                    <p>Nuit à partir de 25E</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="gallery_activite">
+                        <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Auberge La Cannebière">
+                        <div class="desc_activite">
+                            <p>Nuit à partir de 25E</p>
+                        </div>
+                    </div>
+                    <div class="gallery_activite">
+                        <div class="gallery_activite_two_img">
+                            <div class="double_img">
+                                <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="Auberge La Cannebière">
+                                <div class="desc_activite">
+                                    <p>Nuit à partir de 25E</p>
+                                </div>
+                            </div>
+                            <div class="double_img">
+                                <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="Auberge La Cannebière">
+                                <div class="desc_activite">
+                                    <p>Nuit à partir de 25E</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
         </section>
-        
+
 
         <footer>
             <div id="a_propos">
