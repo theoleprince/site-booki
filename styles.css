@@ -22,33 +22,13 @@ header, main, .footer {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
-#titre_principal {
-  display: flex;
-  flex-direction: column;
-}
-#logo {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
+
 #logo img {
   width: 80%;
   height: 50%;
 }
-header h1 {
-  font-family: "BallparkWeiner", serif;
-  font-size: 2.5em;
-  font-weight: normal;
-  margin: 0 0 0 10px;
-}
-header h2 {
-  font-family: Dayrom, serif;
-  font-size: 1.1em;
-  margin-top: 0px;
-  font-weight: normal;
-}
+
 /* Navigation */
 nav ul {
   list-style-type: none;
@@ -77,6 +57,8 @@ nav a:hover {
 
 form.recherche {
   margin: 2em 0em 1em 0em;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 form.recherche input[type="text"] {
@@ -245,7 +227,7 @@ aside img {
 }
 
 .gallery {
-  width: 225px;
+  width: 28%;
   height: 170px;
   border-radius: 20px;
   background-color: white;
@@ -264,7 +246,14 @@ aside img {
   padding: 0px;
   text-align: start;
   font-size: 10px;
-  line-height: 5px;
+  /* line-height: 8px; */
+  margin-left: 10px;
+}
+.desc-heb{
+  padding: 0px;
+  text-align: start;
+  font-size: 10px;
+  line-height: 1px;
   margin-left: 10px;
 }
 
@@ -290,7 +279,7 @@ aside img {
 }
 
 .gallery_populaire img {
-  width: 120px;
+  width: 40%;
   height: auto;
   border-radius: 20px 0px 0px 20px;
 }
@@ -310,7 +299,7 @@ aside img {
 }
 
 .gallery_activite {
-  width: 280px;
+  width: 23%;
   height: 320px;
   border-radius: 20px;
   background-color: white;
@@ -340,12 +329,12 @@ aside img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 280px;
+  width: 23%;
 }
 
 .double_img {
   width: 100%;
-  height: 150px;
+  height: 90%;
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 2px 5px #F2F2F2;
@@ -357,6 +346,19 @@ aside img {
   width: 100%;
   height: 80%;
   border-radius: 20px 20px 0px 0px;
+}
+
+.card1 {
+  height: 170px;
+}
+
+.card2 {
+  height: 130px;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Footer */
@@ -405,19 +407,14 @@ footer {
   list-style-type: none;
 }
 
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
-@media screen and (max-width: 1280px) {}
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 1024px) and (max-width: 1280px) {}
-/* Sur tous types d'écrans orientés verticalement */
-@media all  and (orientation: portrait){
-  /* body */
+@media all and (min-width: 0px) and (max-width: 767px) {
   #bloc_page
   {
    width: auto;
+   font-size: 14px;
+   background-color: #cfbe24;
+   color: #DEEBFF;
   }
-
-  /* header */
 
   header {
     display: flex;
@@ -425,15 +422,156 @@ footer {
     justify-content: center;
   }
 
+  header nav ul {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    margin-left: -40px;
+  }
+
   #logo img {
     width: 30%;
     height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
+   /* header */
+   h1 {
+     font-size: 19px;
+   }
+ 
+   h2 {
+     font-size: 16px;
+   }
+ 
+   span {
+     font-size: 15px;
+   }
+
+   nav a:hover {
+    color: #0065FC;
+    border-top:none;
+    border-bottom: 3px solid #0065FC;
+  }
+ 
+   /* filtre recherche */
+ 
+   form.recherche input[type="text"] {
+     width: 60%;
+     /* font-size: 1%; */
+   }
+   
+   form.recherche div {
+     width: 5%;
+   }
+   
+   form.recherche button {
+     width: 25%;
+     padding: 12px;
+     font-size: 70%;
+   }
+ 
+   /* filtre button */
+   .filtre-button {
+     flex-direction: column;
+   }
+ 
+   /* main */
+   /* aside */
+   .gallery_populaire {
+     width: 90%;
+   }
+ 
+   /* article */
+   .gallery {
+     width: 90%;
+     height: 170px;
+   }
+ 
+   .gallery_activite {
+     width: 90%;
+     height: 170px;
+     margin: 16px;
+   }
+ 
+   .gallery_activite_two_img {
+     width: 90%;
+     margin: 16px;
+     /* height: 170px; */
+   }
+ 
+   #activite article {
+     width: auto;
+   }
+ 
+   /* main */
+   #hebergement {
+     display: flex;
+     flex-direction: column-reverse; 
+   }
+   section
+   {
+    flex-direction: column;
+   }
+   article, aside
+   {
+    width: auto;
+    margin-bottom: 15px; 
+    }
+ 
+    .footer {
+     flex-direction: column;
+    }
+ 
+    .conteneurs-activite {
+     flex-direction: column;
+    }
+ 
+    .conteneurs {
+     flex-direction: column;
+     width: auto;
+    }
+    .liste_hebergement {
+     width: auto;
+     box-shadow: 0px 2px 5px #F2F2F2;
+    }
+ 
+    #hebergement article {
+     margin-right: 0px;
+     width: auto;
+   }
+ 
+   /* activite */
+   .marger-rendre-image1 {
+     margin-top: 20px;
+ 
+   }
+ 
+   /* footer */
+ 
+   #a_propos {
+     width: auto;
+   }
+   #nos_hebergement {
+     width: auto;
+   }
+   #assistance {
+     width: auto;
+   }
+}
+
+@media all and (min-width: 768px) and (max-width: 991.9px) {
+  #bloc_page
+  {
+   width: auto;
+   font-size: 18px;
+   background-color: #37635f;
+   color: #DEEBFF;
   }
 
-  /* filtre recherche */
-
   form.recherche input[type="text"] {
-    width: 60%;
+    width: 35%;
   }
   
   form.recherche div {
@@ -442,93 +580,124 @@ footer {
   
   form.recherche button {
     width: 25%;
-    padding: 12px;
   }
 
-  /* filtre button */
-  .filtre-button {
-    flex-direction: column;
-  }
-
-  /* main */
-  /* aside */
-  .gallery_populaire {
-    width: 90%;
-  }
-
-  /* article */
-  .gallery {
-    width: 90%;
-    height: 180px;
-  }
-
-  .gallery_activite_two_img {
+  #hebergement {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
+    flex-direction: column-reverse; 
   }
 
-  /* main */
-
-  section
-  {
-   flex-direction: column;
-  }
   article, aside
   {
    width: auto;
    margin-bottom: 15px; 
    }
 
-   .footer {
-    flex-direction: column;
+   #hebergement article {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .gallery_populaire {
+    height: 150px;
+    width: 270px ;
+    margin: 10px;
+    padding: 2px;
+  }
+
+  .gallery {
+    /* width: 310px; */
+    height: 170px;
+  }
+
+  .gallery_activite {
+    margin-bottom: 20px;
+    width: 320px;
+  }
+
+  .gallery_activite_two_img {
+    margin-bottom: 20px;
+    width: 320px;
+  }
+
+  .conteneurs {
+    justify-content: space-around;
+  }
+
+  .conteneurs-activite {
+    justify-content: space-around;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1279.9px) {
+  #bloc_page
+  {
+   width: auto;
+   font-size: 19px;
+   background-color: #101aaa;
+   color: #DEEBFF;
+  }
+
+  .conteneurs {
+    justify-content: space-around;
+  }
+
+  .conteneurs-activite {
+    justify-content: space-around;
+  }
+  
+  article
+  {
+   width: 50%;
+   margin-bottom: 15px; 
    }
 
-   .conteneurs-activite {
-    flex-direction: column;
-   }
-
-   .conteneurs {
-    flex-direction: column;
-    width: auto;
-   }
-   .liste_hebergement {
-    width: auto;
-    /* background-color: white; */
-    box-shadow: 0px 2px 5px #F2F2F2;
+   aside
+  {
+   width: 45%;
+   margin-bottom: 15px; 
    }
 
    #hebergement article {
-    margin-right: 0px;
-    width: auto;
-  }
-
-  /* activite */
-  .gallery_activite {
-    /* width: auto; */
-    height: 150px;
-  }
-  .marger-rendre-image1 {
-    margin-top: 20px;
-
-  }
-
-  .gallery_activite a img {
+    /* margin-top: 30px; */
     width: 100%;
-    height: 80%;
-    border-radius: 20px 20px 0px 0px;
   }
 
-  /* footer */
+  .gallery_populaire {
+    height: 130px;
+    width: 90% ;
+    /* margin: 1%; */
+    padding: 2px;
+  }
 
-  #a_propos {
-    width: auto;
+  .gallery {
+    width: 43%;
+    height: 170px;
   }
-  #nos_hebergement {
-    width: auto;
-  }
-  #assistance {
-    width: auto;
+
+  /* .gallery_activite {
+    margin-bottom: 20px;
+  } */
+
+}
+
+@media all and (min-width: 1280px) and (max-width: 1919.9px) {
+  #bloc_page
+  {
+   width: auto;
+   font-size: 14px;
+   background-color: #db5d5d;
+   color: #DEEBFF;
   }
 }
+
+@media all and (min-width: 1920px) and (max-width: 4999.99px) {
+  #bloc_page
+  {
+   width: auto;
+   font-size: 14px;
+   background-color: #63375f;
+   color: #DEEBFF;
+  }
+}
+
