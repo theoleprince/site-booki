@@ -412,8 +412,8 @@ footer {
   {
    width: auto;
    font-size: 14px;
-   background-color: #cfbe24;
-   color: #DEEBFF;
+   /* background-color: #cfbe24; */
+   /* color: #DEEBFF; */
   }
 
   header {
@@ -566,8 +566,8 @@ footer {
   {
    width: auto;
    font-size: 18px;
-   background-color: #37635f;
-   color: #DEEBFF;
+   /* background-color: #37635f; */
+   /* color: #DEEBFF; */
   }
 
   form.recherche input[type="text"] {
@@ -634,8 +634,8 @@ footer {
   {
    width: auto;
    font-size: 19px;
-   background-color: #101aaa;
-   color: #DEEBFF;
+   /* background-color: #101aaa; */
+   /* color: #DEEBFF; */
   }
 
   .conteneurs {
@@ -684,10 +684,10 @@ footer {
 @media all and (min-width: 1280px) and (max-width: 1919.9px) {
   #bloc_page
   {
-   width: auto;
-   font-size: 14px;
-   background-color: #db5d5d;
-   color: #DEEBFF;
+   /* width: auto; */
+   /* font-size: 14px; */
+   /* background-color: #db5d5d; */
+   /* color: #DEEBFF; */
   }
 }
 
