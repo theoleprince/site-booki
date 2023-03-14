@@ -44,6 +44,7 @@ header {
 .menu-hebergement {
   color:#0065FC !important;
   border-top: 3px solid #0065FC;
+  padding-top: 10px;
 }
 nav ul {
   list-style-type: none;
@@ -66,6 +67,7 @@ a {
 nav a:hover {
   color: #0065FC;
   border-top: 3px solid #0065FC;
+  padding-top: 10px;
 }
 
 /* Filtre */
