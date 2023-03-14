@@ -42,7 +42,8 @@ header {
 
 /* Navigation */
 .menu-hebergement {
-  color:#0065FC !important
+  color:#0065FC !important;
+  border-top: 3px solid #0065FC;
 }
 nav ul {
   list-style-type: none;
