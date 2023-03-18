@@ -429,7 +429,7 @@ aside img {
 .liste_activite {
   border-radius: 10px;
   height: auto;
-  width: 100%;
+  /* width: 100%; */
 }
 .gallery_activite:hover {
   -webkit-transform: scale(1.2);
@@ -594,7 +594,7 @@ footer {
   #bloc_page {
     width: auto;
     font-size: 14px;
-    /* background-color: #cfbe24; */
+    background-color: #cfbe24;
     /* color: #DEEBFF; */
   }
 
@@ -608,14 +608,14 @@ footer {
   .footer,
   #hebergement.liste_hebergement,
   #hebergement.liste_populaire,
-  #activite {
-    margin-left: 40px;
-    margin-right: 40px;
+  #activite .liste_activite {
+    margin-left: 25px;
+    margin-right: 30px;
   }
 
   .filtre-general {
-    margin-left: 30px;
-    margin-right: 40px;
+    margin-left: 25px;
+    margin-right: 30px;
   }
 
   header {
@@ -706,9 +706,10 @@ footer {
 
   form.recherche button {
     width: 10%;
-    height: 40px;
+    height: 43px;
     border-radius: 10px;
-    margin-left: -30px;
+    margin-left: -15px;
+    margin-top: -2px;
   }
 
   /* filtre button */
@@ -720,7 +721,7 @@ footer {
 
   .filtre .button {
     margin: 0px;
-    margin: 15px 15px 15px 0px;
+    margin: 10px 10px 3px 0px;
 
   }
 
@@ -736,7 +737,9 @@ footer {
   /* main */
   /* aside */
   .gallery_populaire {
-    width: 89%;
+    width: 90%;
+    margin: 13px;
+
   }
 
   aside {
@@ -749,6 +752,11 @@ footer {
 
   /* article */
 
+  .liste_hebergement h2 {
+    margin-left: 20px;
+  }
+
+
   #hebergement .liste_hebergement {
     margin-right: 0px;
     width: auto;
@@ -759,7 +767,7 @@ footer {
   }
 
   .gallery {
-    width: 89%;
+    width: 91%;
     height: 180px;
     box-shadow: 0px 2px 5px #F2F2F2;
   }
@@ -767,7 +775,7 @@ footer {
   .gallery_activite {
     width: 100%;
     height: 175px;
-    /* margin: 16px; */
+    /* margin: 23px; */
   }
 
   .gallery_activite img {
@@ -777,6 +785,14 @@ footer {
   .gallery_activite_two_img {
     width: 100%;
     height: auto;
+    
+  }
+
+  .double_img {
+    width: 100%;
+    height: 175px;
+    /* margin: 23px;  */
+
   }
 
   .marger-rendre-image1 {
@@ -810,10 +826,11 @@ footer {
     height: 75%;
   }
 
-  #activite .liste_activite {
+  /* #activite .liste_activite {
     width: auto;
+    margin: 25px;
     padding: 0px;
-  }
+  } */
 
   /* main */
   #hebergement {
