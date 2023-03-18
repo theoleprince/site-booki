@@ -226,6 +226,10 @@ aside img {
   justify-content: center;
 }
 
+.gallery:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .gallery {
   width: 28%;
   height: 170px;
@@ -265,7 +269,10 @@ aside img {
 }
 
 /* aside */
-
+.gallery_populaire:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .gallery_populaire {
   display: flex;
   justify-content: flex-start;
@@ -297,7 +304,10 @@ aside img {
   height: auto;
   width: 1200px;
 }
-
+.gallery_activite:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .gallery_activite {
   width: 23%;
   height: 320px;
@@ -324,7 +334,10 @@ aside img {
   margin-top: -10px;
   margin-left: 10px;
 }
-
+.gallery_activite_two_img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .gallery_activite_two_img {
   display: flex;
   flex-direction: column;
@@ -600,14 +613,15 @@ footer {
 
   .gallery_populaire {
     height: 150px;
-    width: 270px ;
-    margin: 10px;
+    width: 310px ;
+    margin: 5px;
     padding: 2px;
   }
 
   .gallery {
-    /* width: 310px; */
+    width: 310px;
     height: 170px;
+    /* margin: 1px; */
   }
 
   .gallery_activite {
@@ -622,6 +636,7 @@ footer {
 
   .conteneurs {
     justify-content: space-around;
+    /* align-items: start; */
   }
 
   .conteneurs-activite {
