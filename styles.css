@@ -594,7 +594,7 @@ footer {
   #bloc_page {
     width: auto;
     font-size: 14px;
-    background-color: #cfbe24;
+    /* background-color: #cfbe24; */
     /* color: #DEEBFF; */
   }
 
