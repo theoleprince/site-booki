@@ -734,7 +734,8 @@ footer {
   }
 
   .info-circle {
-    padding: 2px 9px -30px 9px !important;
+    padding: 4px 9px 6px 9px !important;
+    /* padding-bottom: -30px; */
     background-color: white;
     border-radius: 100%;
     margin-top: -6px;
