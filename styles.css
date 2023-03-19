@@ -761,7 +761,18 @@ footer {
   /* article */
 
   .liste_hebergement h2 {
-    margin-left: 20px;
+    margin-left: 17px;
+  }
+
+  .info-text {
+    display: inline;
+    /* margin-left: 50px; */
+    width:100px;
+    text-align: right;
+  }
+  
+  .afficher-plus {
+    margin-left: 17px;
   }
 
 
