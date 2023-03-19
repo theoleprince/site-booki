@@ -708,12 +708,16 @@ footer {
   }
 
   form.recherche button {
-    width: 8%;
+    width: 12%;
     height: 43px;
     border-radius: 10px;
-    margin-left: -15px;
+    /* margin-left: -15px; */
     margin-top: -2px;
     text-align: center;
+  }
+
+  form.recherche button i{
+    margin-left: -5px;
   }
 
   /* filtre button */
