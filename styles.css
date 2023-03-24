@@ -578,7 +578,7 @@ footer {
   #bloc_page {
     width: auto;
     font-size: 14px;
-    /* background-color: #cfbe24; */
+    background-color: #cfbe24;
     /* color: #DEEBFF; */
   }
 
@@ -607,7 +607,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     border-top: none;
-    border-bottom: 1px solid #949797;
+    /* border-bottom: 1px solid #949797; */
     font-size: 12px;
   }
 
@@ -630,6 +630,7 @@ footer {
     width: 50%;
     text-align: center;
     font-size: 17px;
+    border-bottom: 1px solid #949797;
   }
 
   #navigation a:hover {
@@ -683,7 +684,7 @@ footer {
   }
 
   form.recherche {
-    width: 91%;
+    width: 100%;
   }
 
   form.recherche input[type="text"] {
@@ -733,7 +734,7 @@ footer {
   /* main */
   /* aside */
   .gallery_populaire {
-    width: 90%;
+    width: 94%;
     margin: 13px;
 
   }
@@ -773,7 +774,7 @@ footer {
   }
 
   .gallery {
-    width: 91%;
+    width: 93.5%;
     height: 180px;
     box-shadow: 0px 2px 5px #F2F2F2;
   }
