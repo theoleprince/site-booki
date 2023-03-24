@@ -696,7 +696,7 @@ footer {
     width: 10%;
     height: 40px;
     border-radius: 10px;
-    margin-left: -30px;
+    margin-left: -20px;
   }
 
   /* filtre button */
@@ -713,12 +713,13 @@ footer {
   }
 
   .icon-fa-info-circle {
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex; */
+    /* justify-content: flex-start; */
   }
 
   .info-circle {
-    padding: 2px 9px -30px 9px !important;
+    padding: 2px 9px 0px 9px;
+    padding-bottom: -30px;
     background-color: white;
     border-radius: 100%;
     margin-top: -6px;
